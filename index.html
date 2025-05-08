@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Final Structure Page</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About Us</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#ecosystem">Ecosystem</a></li>
+<li><a href="#roadmap">Roadmap</a></li>
+<li><a href="#tokenomics">Tokenomics</a></li>
+<li><a href="#team">Our Team</a></li>
+<li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<section id="home" class="bg-black text-white">
+  <img src="assets/home.jpg" alt="Home" class="full-img"/>
+  <div class="container">
+    <h2>Home</h2>
+    <p>This is the hero section introducing the site purpose and main message.</p>
+  </div>
+</section>
+<section id="about" class="bg-darkgray text-white">
+  <div class="container row reverse">
+    <img src="assets/about.jpg" alt="About Us" />
+    <div>
+      <h2>About Us</h2>
+      <p>This section has an image on the left and text on the right.</p>
+    </div>
+  </div>
+</section>
+<section id="features" class="bg-black text-white">
+  <div class="container">
+    <h2>Features</h2>
+    <p>This is a text-only section for features content and highlights.</p>
+  </div>
+</section>
+<section id="ecosystem" class="bg-darkgray text-white">
+  <div class="container row">
+    <img src="assets/ecosystem.jpg" alt="Ecosystem" />
+    <div>
+      <h2>Ecosystem</h2>
+      <p>This section has an image on the right and text on the left.</p>
+    </div>
+  </div>
+</section>
+<section id="roadmap" class="bg-black text-white">
+  <div class="container">
+    <h2>Roadmap</h2>
+    <p>This is a text-only section for roadmap content and highlights.</p>
+  </div>
+</section>
+<section id="tokenomics" class="bg-darkgray text-white">
+  <div class="container row reverse">
+    <img src="assets/tokenomics.jpg" alt="Tokenomics" />
+    <div>
+      <h2>Tokenomics</h2>
+      <p>This section has an image on the left and text on the right.</p>
+    </div>
+  </div>
+</section>
+<section id="team" class="bg-black text-white">
+  <div class="container">
+    <h2>Our Team</h2>
+    <p>This is a text-only section for our team content and highlights.</p>
+  </div>
+</section>
+<section id="contact" class="bg-darkgray text-white">
+  <div class="container row">
+    <img src="assets/contact.jpg" alt="Contact Us" />
+    <div>
+      <h2>Contact Us</h2>
+      <p>This section has an image on the right and text on the left.</p>
+    </div>
+  </div>
+</section>
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
+  });
+});
+</script>
+</body>
+</html>
